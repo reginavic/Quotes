@@ -1,0 +1,111 @@
+body {
+    background-image: url("pic44.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-color: rgb(162, 162, 250);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#top {
+    position: fixed;
+    height: 70vh;
+    color: whitesmoke;
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 4px rgba(121, 121, 170);
+}
+#par {
+    display: none;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    color: whitesmoke;
+    margin-top: 10px;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+}
+#btn {
+    position: fixed;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38, 135, 0.37);
+    backdrop-filter: blure(5.5px);
+    border-radius: 30px;
+    font-size: 25px;
+    color: whitesmoke;
+    border: 2px solid rgb(121, 121, 170);
+    font-family:'Lora', serif;
+    cursor: pointer;
+    margin-top: 300px;
+}
+.decoration {
+    width: 100%;
+    max-width: 280px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+.decoration:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 200px;
+    margin-left: 50px;
+    background: #fff;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.6) 0%
+    );
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 7s ease-in-out 0.07s infinite;
+}
+@keyframes movingFlare {
+    0% {
+    left: -30px;
+    margin-left: 0px;
+}
+30% {
+    left: 110%;
+    margin-left: 80px;
+}
+100% {
+    left: 110%;
+    margin-left: 80px;
+    }
+}
+@media all and (max-width:800px){
+#top {
+    text-align: center;
+}
+#par{
+    font-size: 18px;
+    margin-top: 250px;
+}
+}
+@media all and (max-width:500px){
+    #top {
+        text-align: center;
+    }
+    #par{
+        font-size: 18px;
+        margin-top: 250px;
+    }
+}
