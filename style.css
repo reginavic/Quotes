@@ -5,7 +5,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    background-color: rgb(162, 162, 250);
+    background-color: rgb(14, 12, 15);
+    overflow: hidden;
 }
 .container {
     display: flex;
@@ -30,6 +31,7 @@ body {
     padding: 20px;
     width: 70%;
     text-align: center;
+    position: fixed;
 }
 #btn {
     position: fixed;
@@ -43,7 +45,7 @@ body {
     border: 2px solid rgb(121, 121, 170);
     font-family:'Lora', serif;
     cursor: pointer;
-    margin-top: 300px;
+    margin-top: 450px;
 }
 .decoration {
     width: 100%;
@@ -94,18 +96,11 @@ body {
 @media all and (max-width:800px){
 #top {
     text-align: center;
+    font-size: 40px;
 }
 #par{
     font-size: 18px;
     margin-top: 250px;
 }
 }
-@media all and (max-width:500px){
-    #top {
-        text-align: center;
-    }
-    #par{
-        font-size: 18px;
-        margin-top: 250px;
-    }
-}
+
